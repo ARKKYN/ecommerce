@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "shop"
+version = "0.1.0"
+description = ""
+authors = ["Arun Karthi Mani <arunkarthi.mani@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.115.6"}
+sqlmodel = "^0.0.22"
+coverage = "^7.6.9"
+pytest = "^8.3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

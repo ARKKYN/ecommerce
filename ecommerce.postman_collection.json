@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "e7df899e-e2ef-4c2c-82f9-a8d9d52a612c",
+		"name": "ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"larf\",\n    \"price\" : 100,\n    \"stock\" : 50  , \n    \"description\" : \"description\"    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\" : [\n           {\n                    \"product_id\": \"f5991ee4-8d0a-40b3-b54b-06a63c038dd9\",\n                    \"quantity\": 2\n                }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/v1/orders"
+			},
+			"response": []
+		}
+	]
+}
