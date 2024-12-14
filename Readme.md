@@ -15,8 +15,11 @@ Simple e-commerce servie with a RESTful API for a view product, add product and 
 - GET /products - Get all products
 - POST /products - Create a new product
 - POST /orders - Create a new order
+
+ Please use the below file to test/view the endpoints using Postman.
+
  ```
- Please use ecommerce.postman_collection.json file to test/view the endpoints using Postman.
+ ecommerce.postman_collection.json
  ```
 
 ## Requirements
@@ -47,4 +50,4 @@ uvicorn main:app --reload
 ## To Test the project
 
 ```
-ENVIRONMENT=test poetry run coverage run --source=shop -m pytest  ```
+ENVIRONMENT=test poetry run coverage run --source=shop -m pytest ```
